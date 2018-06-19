@@ -12,6 +12,8 @@
 		FA61C01E20D93674003A4896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA61C01C20D93674003A4896 /* Main.storyboard */; };
 		FA61C02020D93675003A4896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA61C01F20D93675003A4896 /* Assets.xcassets */; };
 		FA61C02320D93675003A4896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA61C02120D93675003A4896 /* LaunchScreen.storyboard */; };
+		FA61C02D20D936D5003A4896 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA61C02C20D936D5003A4896 /* SWRevealViewController.m */; };
+		FA61C02F20D937CA003A4896 /* SlideInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61C02E20D937CA003A4896 /* SlideInTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		FA61C01F20D93675003A4896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA61C02220D93675003A4896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA61C02420D93675003A4896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA61C02A20D936D3003A4896 /* IOS-Swift-SlideInMenuSW-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOS-Swift-SlideInMenuSW-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA61C02B20D936D4003A4896 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FA61C02C20D936D5003A4896 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FA61C02E20D937CA003A4896 /* SlideInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,13 @@
 				FA61C01820D93674003A4896 /* AppDelegate.swift */,
 				FA61C01A20D93674003A4896 /* ViewController.swift */,
 				FA61C01C20D93674003A4896 /* Main.storyboard */,
+				FA61C02E20D937CA003A4896 /* SlideInTableViewController.swift */,
+				FA61C02B20D936D4003A4896 /* SWRevealViewController.h */,
+				FA61C02C20D936D5003A4896 /* SWRevealViewController.m */,
 				FA61C01F20D93675003A4896 /* Assets.xcassets */,
 				FA61C02120D93675003A4896 /* LaunchScreen.storyboard */,
 				FA61C02420D93675003A4896 /* Info.plist */,
+				FA61C02A20D936D3003A4896 /* IOS-Swift-SlideInMenuSW-Bridging-Header.h */,
 			);
 			path = "IOS-Swift-SlideInMenuSW";
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					FA61C01420D93674003A4896 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -135,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA61C02F20D937CA003A4896 /* SlideInTableViewController.swift in Sources */,
 				FA61C01B20D93674003A4896 /* ViewController.swift in Sources */,
 				FA61C01920D93674003A4896 /* AppDelegate.swift in Sources */,
+				FA61C02D20D936D5003A4896 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "IOS-Swift-SlideInMenuSW/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -288,6 +302,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pooya.brain.dev.IOS-Swift-SlideInMenuSW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOS-Swift-SlideInMenuSW/IOS-Swift-SlideInMenuSW-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "IOS-Swift-SlideInMenuSW/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pooya.brain.dev.IOS-Swift-SlideInMenuSW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOS-Swift-SlideInMenuSW/IOS-Swift-SlideInMenuSW-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
